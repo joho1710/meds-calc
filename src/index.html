@@ -1,0 +1,242 @@
+<!doctype html>
+<html class="no-js" ng-app="medsCalc">
+  <head>
+
+
+
+
+    <!-- Metatags and Title
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <meta charset="utf-8">
+    <title>medsCalc</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- ––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+
+
+    <!-- Build/Inject Styles
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css({.tmp/serve,src}) styles/app.css -->
+    <!-- inject:css -->
+    <!-- css files will be automatically insert here -->
+    <!-- endinject -->
+    <!-- endbuild -->
+
+    <!-- build:js(src) scripts/modernizr.js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+    <!-- ––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+
+
+  </head>
+  <body>
+
+
+
+
+    <!-- Navbar
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+
+
+
+
+
+
+    <!-- Content Container
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <div class="container-fluid">
+
+
+
+
+      <!-- Content Row
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+      <div class="row-fluid">
+
+
+
+
+        <!-- Sidebar Column
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Export</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="">Another nav item</a></li>
+            <li><a href="">More navigation</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="">Another nav item</a></li>
+          </ul>
+        </div>
+
+        <!-- End Sidebar Column –––––––––––––––––––––––––– -->
+
+
+
+
+        <!-- Main Column
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Dashboard</h1>
+
+          <div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="http://placehold.it/200x200" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="http://placehold.it/200x200" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="http://placehold.it/200x200" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="http://placehold.it/200x200" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+          </div>
+
+          <h2 class="sub-header">Section title</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="i in [1, 2, 3, 4, 5] track by $index">
+                  <td>1,00{{ $index }}</td>
+                  <td>Lorem</td>
+                  <td>ipsum</td>
+                  <td>dolor</td>
+                  <td>sit</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- End Main Column ––––––––––––––––––––––––––––– -->
+
+
+
+
+      </div>
+
+      <!-- End Content Row ––––––––––––––––––––––––––––– -->
+
+
+
+
+    </div>
+
+    <!-- End Content Container ––––––––––––––––––––––– -->
+
+
+
+
+    <!--
+    ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    <div ui-view></div>
+
+    <!- ––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+
+
+    <!-- Build/Inject Scripts
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <!-- build:js(src) scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- run `gulp inject` to automatically populate bower script dependencies -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
+    <!-- inject:js -->
+    <!-- js files will be automatically insert here -->
+    <!-- endinject -->
+
+    <!-- inject:partials -->
+    <!-- angular templates will be automatically converted in js and inserted here -->
+    <!-- endinject -->
+    <!-- endbuild -->
+
+    <!-- ––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+
+
+  </body>
+</html>
